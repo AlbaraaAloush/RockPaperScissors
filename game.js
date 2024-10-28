@@ -52,6 +52,14 @@ function playGame() {
   } else {
     alert("The game is a tie!");
   }
+
+  let wantsRematch = confirm("Would you like a rematch (choose yes or no)?");
+
+  if (wantsRematch) {
+    playGame();
+  } else {
+    return;
+  }
 }
 
 playGame();
